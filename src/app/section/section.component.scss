@@ -1,0 +1,21 @@
+.section:nth-child(odd) {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.section:nth-child(even) {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.section {
+  padding: 0.5rem;
+  transform: skew(0deg, -5deg);
+  -ms-transform: skew(0deg, -10deg);
+  -webkit-transform: skew(0deg, -5deg);
+}
+
+.straight {
+  margin-top: 5rem;
+  transform: skew(0deg, +5deg);
+  -ms-transform: skew(0deg, +10deg);
+  -webkit-transform: skew(0deg, +5deg);
+}

@@ -1,0 +1,11 @@
+.straight {
+  margin-top: 5rem;
+  transform: skew(0deg, +5deg);
+  -ms-transform: skew(0deg, +10deg);
+  -webkit-transform: skew(0deg, +5deg);
+}
+
+.heading-row {
+  display: flex;
+  justify-content: space-between;
+}

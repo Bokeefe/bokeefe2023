@@ -1,0 +1,24 @@
+<div class="straight">
+  <div *ngIf="copy?.img.length">
+    <img src="{{img.src}}"
+         alt="{{img.alt}}">
+  </div>
+
+  <div class="heading-row">
+    <div>
+      <h1>{{copy?.title}}</h1>
+      <div *ngIf="copy?.link">
+        <a href="{{copy.link}}"
+           target="_blank">
+          <i class="fas fa-external-link-alt"></i>
+        </a>
+      </div>
+    </div>
+
+    <p>{{copy?.time}}</p>
+  </div>
+
+  <b>{{copy?.role}}</b>
+  <p>{{copy.blurb}}</p>
+  <ng-content></ng-content>
+</div>
