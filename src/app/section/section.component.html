@@ -1,44 +1,221 @@
 <div class="section">
   <h1>Brendan O'Keefe</h1>
 
-  <div class="straight">
-    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium modi, quae vero totam facere corrupti laboriosam cupiditate repellendus debitis molestiae odio ullam cum et placeat hic quidem earum, omnis esse.</p>
-  </div>
+  <div class="content-container">
+    <div class="straight"
+         style="text-align: center; margin:0;">
+      <img src="../../assets/bcircle.png"
+           width="50%" />
+    </div>
+    <div class="straight">
 
-  <svg xmlns="http://www.w3.org/2000/svg"
-       viewBox="100 100 100 100"
-       preserveAspectRatio="none">
-    <polygon fill="white"
-             points="0,100 100,0 100,100" />
-  </svg>
+      <p>
+        My tech interests are centered around the various ways
+        that we can use the web to bring people together.
+        I believe that by focusing on solid web technologies people
+        can lessen their ecological footprint, require less bureaucracy,
+        connect with similar minds, and collaborate more.
+        <br><br>
+        I hope to find a workplace where I can contribute my work ethic,
+        inquisitive spirit, and problem solving skills to an exciting and
+        collaborative team. Having worked for a small start up with 200
+        customers as well as a large company that serves millions I have
+        learned a lot about successful work environments. I would like my
+        next job to fall somewhere between my last two jobs and find a
+        workplace with a great mixture of challenges and a positive spirit.
+      </p>
+    </div>
+  </div>
 </div>
 
-<div class="section">
-  <h1>EXPERIENCE</h1>
+<div class="section"
+     id="education">
+  <h1>Education</h1>
+  <div class="content-container">
+    <div class="straight">
+      <app-content-container title="CodeCraft School of Technology"
+                             role="Full Stack Certification"
+                             time="Aug 2016 - Nov 2016">
 
-  <div *ngFor="let item of copy?.resume">
-    <app-content-container [copy]="item"></app-content-container>
+        <p>
+          A 10 week Full Stack bootcamp that covered Mongoose Express Angular and Node among other technologies.
+        </p>
+      </app-content-container>
+
+      <app-content-container title="University of Iowa"
+                             role="BA in Anthropology"
+                             time="Aug 2011 - May 2014">
+
+        <p>
+          During my time in the Anthropology department I was involved in several archaelogical
+          digs and a published a research project that launched my interest in programming.
+        </p>
+      </app-content-container>
+    </div>
   </div>
-
-  <svg xmlns="http://www.w3.org/2000/svg"
-       viewBox="100 100 100 100"
-       preserveAspectRatio="none">
-    <polygon fill="white"
-             points="0,100 100,0 100,100" />
-  </svg>
 </div>
 
-<div class="section">
-  <h1>WEB PORTFOLIO</h1>
+<div class="section"
+     id="resume">
+  <h1>Experience</h1>
+  <div class="content-container">
+    <div class="straight">
+      <app-content-container title="Spectrum - Charter Communications"
+                             role="Lead Front End"
+                             time="Nov 2018 - current">
+        <p>Charter recently became a large company with a customer base of about 30 million people. I work at the Denver campus with 3,000 other employees on a team of 7. We have been tasked with creating a number of apps that seek to integrate thousands of legacy customers from older companies acquired by Charter.
+          <br><br>
+          It has been a great experience working with professional architecture, design, accessibility and testing teams to deliver websites that millions of people can use easily. Front-end teams at Charter share their own libraries in order to meet ADA and brand criteria and I have had my hand in contributing to those projects as well as troubleshooting them. Collaborating with other teams has been a great opportunity to learn from different practices and problem-solving approaches. My work here has been in Angular (7 & 8) with one small application in React and mocking databases in Node.</p>
+      </app-content-container>
 
-  <div *ngFor="let item of copy?.resume">
-    <app-content-container [copy]="item"></app-content-container>
+      <app-content-container title="ServiceCore - 1bg - 5-x"
+                             role="Front End Developer"
+                             time="Aug 2017 - Nov 2018"
+                             link="https://servicecore.com">
+        <iframe width="100%"
+                height="315"
+                src="https://www.youtube.com/embed/P-1pLdGPz2M"
+                frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        <p>Day-to-day I worked on a team of 6 other developers
+          on our flagship software ServiceCore. This application handles the accounting, syncing with QuickBooks,
+          scheduling, GPS routing, and reporting of various service businesses in the septic and portable toilet
+          industry. The technology stack is angular.js/Angular/Ionic hybrid and php. <br><br>1bg also provides
+          contract-based projects as well as hosting for 22 WordPress sites. Clients also have required
+          various specialized solutions which led to me writing custom plugins and themes in php/WordPress.The experience I am most proud of at this job has been creating a brand-new cloud platform for a multinational
+          client from scratch in Angular 6. I was responsible for developing the entire front-end for
+          this application that served millions of records that could be paginated, sorted,
+          and filtered efficiently even on mobile devices. It also had the capability to switch
+          translations on the front-end by the user. </p>
+      </app-content-container>
+
+      <app-content-container title="DeveloperX.io"
+                             role="Web Developer"
+                             time="June 2017 - Aug 2017"
+                             link="https://www.developerx.io">
+        <iframe width="100%"
+                height="315"
+                src="https://www.youtube.com/embed/e_rJE1gyq38"
+                frameborder="0"
+                allowfullscreen></iframe>
+        <p>
+          This was a short-lived start-up where my position was to create brand content and take on
+          all WordPress client work. I worked with clients to wireframe, draft responsive mock-ups in
+          Adobe XD, and execute their ideas from scratch. Also, I apprenticed under the lead React.js/Native
+          developer on small tickets for a flagship app.
+        </p>
+      </app-content-container>
+
+      <app-content-container title="ProgressNow Colorado"
+                             role="WordPress Developer"
+                             time="Jan 2017 - July 2017"
+                             link="http://progressnowcolorado.org">
+        <p>
+          I was brought in to help this non-profit in developing a platform for their followers to connect.
+          Because it needs to remain editable to non-coders, it is an 'appified' WordPress site. My role was
+          to use a user’s location and interests and connect them to several APIs, inform users of their
+          elected representatives as well as schedule push notifications for events and elections and also
+          provide a personally relevant, local political news feed. This required me to create a custom
+          theme and to write custom PHP functions that communicate with the MySQL database. I also
+          created administrative pages in the dashboard so the app can be managed by non-coders in the
+          future.
+        </p>
+      </app-content-container>
+    </div>
   </div>
+</div>
 
-  <svg xmlns="http://www.w3.org/2000/svg"
-       viewBox="100 100 100 100"
-       preserveAspectRatio="none">
-    <polygon fill="white"
-             points="0,100 100,0 100,100" />
-  </svg>
+<div class="section"
+     id="projects">
+  <h1>Projects</h1>
+  <div class="content-container">
+    <div class="straight">
+      <app-content-container title="commune.fun"
+                             role="Work in Progress"
+                             time="React.js / Redux / Socket.io / Node"
+                             link="https://commune-games.herokuapp.com/">
+        <p>
+          A platform for mimicking party games like 'Cards Against Humanity' and 'What Do You Meme?' in app form.
+          The goal was to have users be able to create 'rooms'
+          within the site and pick from a number of games to play in real time with each other. Near MVC, work in progress.
+        </p>
+      </app-content-container>
+
+      <app-content-container title="slomo.world"
+                             time="Angular / Node">
+        <img src="../../assets/slomo.png"
+             width="100%"
+             height="auto" />
+        <p>
+          A music player that created instrumental playlists where the user could slow the playback
+          speed down as well as add reverb to create an atmosphere like the ballroom scene in 'The Shining'.
+          I usually bring this up for the holidays and have a creepy xmas music playlist.
+        </p>
+      </app-content-container>
+
+      <app-content-container title="Exquisite Warps"
+                             time="Angular / MongoDb / Express/ Node">
+        <iframe width="100%"
+                height="315"
+                src="https://www.youtube.com/embed/BGCKou1nBEQ"
+                frameborder="0"
+                allowfullscreen></iframe>
+        <p>
+          Exquisite Warps has been an idea of mine for a long time. It seeks to create a platform for music and storytelling collaboration with friends or strangers. Like the artist's game <a href="https://en.wikipedia.org/wiki/Exquisite_corpse"
+             target="_blank"> Exquisite Corpse</a>, it uses mystery, imagination, and collaboration to create something big together.
+        </p>
+      </app-content-container>
+    </div>
+  </div>
+</div>
+
+<div class="section"
+     id="involvement">
+  <h1>Involvement</h1>
+  <div class="content-container">
+    <div class="straight">
+
+      <app-content-container title="Denver Homeless Out Loud Tiny Homes Community"
+                             link="https://denverhomelessoutloud.org">
+        <img src="../../assets/tiny.png"
+             width="100%"
+             height="auto"
+             alt="tiny homes">
+        <p>
+          I got to learn some small-scale building skills while working with an awesome
+          group of future residents and volunteers.
+        </p>
+      </app-content-container>
+
+      <app-content-container title="DevFaction Meetup">
+        <img src="../../assets/devfaction.jpg"
+             width="100%"
+             height="auto"
+             alt="dev faction">
+        <p>
+          I was part of a team that helped run this technology meetup monthly.
+          My role included A/V setup, running the cameras or video control room,
+          as well as editing the videos of the presentations.
+        </p>
+      </app-content-container>
+
+      <app-content-container title="Iowa City Winter Shelter Cot Campaign"
+                             link="http://littlevillagemag.com/iowa-city-musician-raises-money-and-awareness-for-homeless-shelter/">
+        <img src="../../assets/cots.png"
+             width="100%"
+             height="auto"
+             alt="cots">
+        <p>
+          While volunteering at the shelter I saw they were short on cots and underfunded.
+          I used social media to facilitate awareness and money, secured a discount from a
+          camping supply store and within two days purchased enough cots for the rest of the winter.
+        </p>
+      </app-content-container>
+    </div>
+  </div>
+</div>
+<div style="text-align: center; margin:3rem 0;">
+  <img src="../../assets/performa.png"
+       width="50%" />
 </div>

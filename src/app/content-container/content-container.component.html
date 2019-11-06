@@ -1,24 +1,17 @@
 <div class="straight">
-  <div *ngIf="copy?.img.length">
-    <img src="{{img.src}}"
-         alt="{{img.alt}}">
-  </div>
-
-  <div class="heading-row">
-    <div>
-      <h1>{{copy?.title}}</h1>
-      <div *ngIf="copy?.link">
-        <a href="{{copy.link}}"
-           target="_blank">
-          <i class="fas fa-external-link-alt"></i>
-        </a>
+  <div>
+    <h3>{{title}}</h3>
+    <div *ngIf="link"
+         class="biz-link">
+      <div (click)="onClickLink()">
+        <i class="fas fa-external-link-alt"></i>
       </div>
     </div>
-
-    <p>{{copy?.time}}</p>
+  </div>
+  <div class="heading-row">
+    <b>{{role}}</b>
+    <b>{{time}}</b>
   </div>
 
-  <b>{{copy?.role}}</b>
-  <p>{{copy.blurb}}</p>
   <ng-content></ng-content>
 </div>

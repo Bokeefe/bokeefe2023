@@ -1,9 +1,9 @@
 .section:nth-child(odd) {
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(68, 0, 253, 0.7);
 }
 
 .section:nth-child(even) {
-  background: rgba(0, 0, 0, 0.1);
+  background: rgba(255, 0, 0, 0.7);
 }
 
 .section {
@@ -11,11 +11,24 @@
   transform: skew(0deg, -5deg);
   -ms-transform: skew(0deg, -10deg);
   -webkit-transform: skew(0deg, -5deg);
+
+  .content-container {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    max-width: 900px;
+    margin: auto;
+    padding: 1rem;
+  }
 }
 
 .straight {
-  margin-top: 5rem;
   transform: skew(0deg, +5deg);
   -ms-transform: skew(0deg, +10deg);
   -webkit-transform: skew(0deg, +5deg);
+}
+
+@media (min-width: 426px) {
+  .straight {
+    margin: 5rem 0;
+  }
 }

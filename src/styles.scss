@@ -1,4 +1,52 @@
 /* You can add global styles to this file, and also import other style files */
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+@font-face {
+  font-family: 'AEIOU';
+  src: local('AEIOU'), url('./assets/fonts/_aeiou2U.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'LANCAS';
+  src: local('LANCAS'), url('./assets/fonts/LANCAS__.TTF') format('truetype');
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: local('Roboto'), url('./assets/fonts/roboto/Roboto-Light.ttf') format('truetype');
+}
+
+html,
+body {
+  height: 100%;
+  color: rgb(255, 234, 202);
+  margin: 0;
+  font-family: 'Roboto', 'Helvetica Neue', sans-serif;
+  background-image: url('./assets/grex.jpg');
+  background-repeat: repeat;
+}
+a {
+  color: rgb(255, 234, 202);
+}
+
+h1 {
+  font-family: 'AEIOU';
+  text-shadow: 2px 2px 15px;
+}
+
+h2,
+h3 {
+  font-family: 'LANCAS';
+  text-shadow: 2px 2px 15px;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+p {
+  font-family: 'Roboto';
+  font-size: 1.25rem;
+}

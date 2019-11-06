@@ -6,11 +6,16 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./content-container.component.scss']
 })
 export class ContentContainerComponent implements OnInit {
-  @Input() copy: any;
+  @Input() link: string;
+  @Input() title: string;
+  @Input() time: string;
+  @Input() role: string;
 
   constructor() {}
 
-  ngOnInit() {
-    console.log(this.copy);
+  onClickLink() {
+    window.open(this.link, 'blank');
   }
+
+  ngOnInit() {}
 }
